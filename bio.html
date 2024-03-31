@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <audio id="blipSound" src="blip11.mp3"></audio>
+    <audio id="clickSound" src="blip3.mp3"></audio>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" class="logo" id="homePic">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn2" id="homeLink">Home</a></li>
+                    <li><a href="work.html" class="btn2" id="workLink">Work Samples</a></li>
+                    <li><a href="bio.html" class="btn2" id="bioLink">Bio/Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section id="bio">
+            <div class="container">
+            
+                <p>We are a multidisciplinary sound studio with expertise in experience design, multimedia composition, and sonic branding. We believe sound is often the most overlooked, undervalued component of a project, but when done effectively, has the highest potential impact. </p>
+                <br>
+                <br>
+                <p>With over 2 decades of musical training, Stewart Bird engages in long form composition, interactive audio/visual software, performance and new media.  He has released multiple albums internationally on record labels such as Blueberry Records, Ninja Tune, Carpi Records, Dirty Tapes, Constellation Tatsu and others.  Stewart was an attendee of Red Bull Music Academy: Studio Science in New York, and the Institut For (x) residency in Aarhus, Denmark for audio composition.  He has had profiles in Resident Advisor, Fact magazine, Dummy Magazine, Spin Magazine, and appeared on NTS, The Lot Radio, BBC Radio 1 and 1Xtra, and other reputable musical outlets.  He has a Masters in Fine Arts from Pratt Institute and a Bachelors in Emergent Digital Practices with an emphasis on Max MSP and Audio Installation from the University of Denver.  
+                </p>
+                <br>
+                <br>
+                <p>For inquires, please contact hello@cgsb.studio</p>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>© Computer Generated Sound Bureau 2024</p>
+</footer>
+</html>

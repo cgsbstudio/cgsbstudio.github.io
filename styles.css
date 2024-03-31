@@ -1,0 +1,124 @@
+@keyframes blipAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .button-clicked {
+    animation: blipAnimation 0.3s ease;
+  }
+  
+
+  @font-face {
+    font-family: 'Gallient';
+    src: url('Gallient.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif
+    
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ac4444;
+    color: #fff;
+    padding: 10px 0;
+    
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px 0;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    color: #242424;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn2 {
+    
+    color: #242424;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn:hover {
+    background-color: #e48b68;
+}
+
+.btn2:hover {
+    color: #e48b68;
+}
+
+section {
+    padding: 20px 0;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.project p {
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #c0c0c0;
+    text-align: center;
+    padding: 10px 0;
+    font-size: x-small;
+}
+

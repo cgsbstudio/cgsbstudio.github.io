@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <audio id="blipSound" src="blip11.mp3"></audio>
+    <audio id="clickSound" src="blip3.mp3"></audio>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        min-height: 80vh;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            }
+
+        h1 {font-family: "Gallient", sans-serif;
+            font-size: 2.5em;
+            color: #000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <a href="index.html">
+            <img src="logo5.png" alt="Logo" class="logo" id="homePic" width="128"   height="70">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn2" id="homeLink">Home</a></li>
+                    <li><a href="work.html" class="btn2" id="workLink">Work Samples</a></li>
+                    <li><a href="bio.html" class="btn2" id="bioLink">Bio/Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Immersive Sound Design</h1>
+                <br>
+                <h1>Sonic Branding and Identity</h1>
+                <br>
+                <h1>Original Music Composition</h1>
+                <br>
+                <h1>Generative Audio Systems</h1>
+
+                <br><br><br>
+                <a href="work.html" class="btn" id="viewWorkButton">View Work Samples</a>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>© Computer Generated Sound Bureau 2024</p>
+</footer>
+</html>
