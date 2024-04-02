@@ -35,7 +35,18 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    margin-bottom: 20px;
+}
+
+.container h1 {
+    margin: 0 10px; /* Add some spacing between the h1 elements */
+    white-space: nowrap; /* Prevent line breaks within the h1 elements */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
 }
 
 header {
