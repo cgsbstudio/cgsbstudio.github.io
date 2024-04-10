@@ -136,3 +136,17 @@ footer {
     font-size: x-small;
 }
 
+.video-container {
+    
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; /* Add some horizontal padding */
+    box-sizing: border-box; /* Include padding in the container's width */
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensure the video doesn't exceed its container */
+  }
