@@ -56,6 +56,12 @@ body {
     }
 }
 
+@media (min-width: 769px) {
+    .container h1 br {
+        display: none;
+    }
+}
+
 header {
     position: sticky;
     top: 0;
