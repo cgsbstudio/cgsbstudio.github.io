@@ -166,3 +166,26 @@ footer {
     height: auto;
     max-width: 100%; /* Ensure the video doesn't exceed its container */
   }
+
+
+  .image-carousel {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-bottom: 40px;
+}
+
+.image-carousel .carousel-container {
+    display: inline-flex;
+    transition: transform 0.5s ease;
+}
+
+.image-carousel .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.image-carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+}
