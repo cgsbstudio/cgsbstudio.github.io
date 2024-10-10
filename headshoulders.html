@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Samples</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <audio id="blipSound" src="blip11.mp3"></audio>
+    <audio id="clickSound" src="blip3.mp3"></audio>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Garamond, sans-serif;
+            display: flex;
+            flex-direction: column;
+            background-color: #F0F0E5;
+        }
+
+        header {
+            background-color: #f0f0e5;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer {
+            background-color: transparent;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project h2 {
+            margin-top: 0;
+        }
+
+        .project iframe {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 16/9;
+            object-fit: contain;
+        }
+
+        
+        .video {
+
+            width: 100%;
+            height: auto;
+            
+            margin-bottom: 40px;
+
+        }
+
+        .video-carousel {
+            width: 100%;
+            white-space: nowrap;
+            margin-bottom: 40px;
+        }
+
+        .carousel-container {
+            display: inline-flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+
+        .carousel-item video {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="CGSB.svg" alt="Logo" class="logo" id="homePic" width="150">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn2" id="homeLink">Home</a></li>
+                <li><a href="work.html" class="btn2" id="workLink">Work Samples</a></li>
+                <li><a href="bio.html" class="btn2" id="bioLink">Bio/Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="work">
+            <h2>Head & Shoulders</h2>
+            <br>
+            <p>Virtual Production • "Take It Up To 100" </p>
+            
+            <p>Concept, Unreal Engine, 3D Modeling, Lighting</p>
+            <br>
+            
+            <br>
+            <div class="image-carousel">
+                <img src="img/HS/1.jpg" width="100%">
+                <br>
+                <img src="img/HS/2.jpg" width="100%">
+                <br>
+                <img src="img/HS/3.jpg" width="100%">
+                <br>
+                <img src="img/HS/4.jpg" width="100%">
+                <br>
+                <img src="img/HS/5.jpg" width="100%">
+                    </div>
+        <div class="project">
+            <iframe
+            src="https://www.youtube.com/embed/qX4GPype7sc?si=2emGM097Mbd_hYfh">
+            </iframe>
+        </div>
+
+        </section>
+    </main>
+</body>
+<footer>
+    <p>© Computer Generated Services Bureau 2024</p>
+</footer>
+</html>
