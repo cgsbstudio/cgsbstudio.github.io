@@ -24,10 +24,14 @@ Changelog:
 - mobile testing
 - og/metadata
 
+ToDo:
+
+- check bold text on about page in safari
+- check blur in safari
+
 Features to consider adding:
 
 - Multiple projects on home page carousel + hero interactivity?
-- Font bold better support
 - Logos on work page? We should dial in that presentation.
 
 ############################################################

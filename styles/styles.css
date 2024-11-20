@@ -329,6 +329,7 @@ footer ul li {
 @media (max-width: 768px) {
     .container h1 {
         font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
 }
 
 @media (min-width: 769px) {
