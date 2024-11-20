@@ -21,9 +21,6 @@ Changelog:
 - work samples light design
 - mobile spacing/design
 - menu burger
-
-Notes/To-Do:
-
 - mobile testing
 - og/metadata
 
@@ -31,6 +28,7 @@ Features to consider adding:
 
 - Multiple projects on home page carousel + hero interactivity?
 - Font bold better support
+- Logos on work page? We should dial in that presentation.
 
 ############################################################
 
