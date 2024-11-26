@@ -1,235 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Samples</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <audio id="blipSound" src="blip11.mp3"></audio>
-    <audio id="clickSound" src="blip3.mp3"></audio>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Garamond, sans-serif;
-            display: flex;
-            flex-direction: column;
-            background-color: #F0F0E5;
-        }
-
-        header {
-            background-color: #f0f0e5;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        footer {
-            background-color: transparent;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: inline-block;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .project {
-            margin-bottom: 40px;
-        }
-
-        .project h2 {
-            margin-top: 0;
-        }
-
-        .project iframe {
-            width: 100%;
-            height: 100%;
-            aspect-ratio: 16/9;
-            object-fit: contain;
-        }
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#F0F0E5">
+        <meta property="description" content="Experience Design Solutions For Creative Studios & Agencies">
         
-        .video {
+        <meta property="og:title" content="CGSB">
+        <meta property="og:description" content="Experience Design Solutions For Creative Studios & Agencies">
+        <meta property="og:image" content="img/og-thumb.jpg">
+        <meta property="og:url" content="https://cgsb.studio">
+        <meta property="og:type" content="website">
+        
+        <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+        
+        <title>CGSB - Work Samples</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <style>
 
-            width: 100%;
-            height: auto;
-            
-            margin-bottom: 40px;
-
-        }
-
-        .video-carousel {
-            width: 100%;
-            white-space: nowrap;
-            margin-bottom: 40px;
-        }
-
-        .carousel-container {
-            display: inline-flex;
-            transition: transform 0.5s ease;
-        }
-
-        .carousel-item {
-            flex: 0 0 100%;
-            width: 100%;
-        }
-
-        .carousel-item video {
-            width: 100%;
-            height: auto;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
+            h2 {
+                text-align: left;
             }
 
-            nav ul {
-                flex-direction: column;
-                margin-top: 10px;
+            .mobile_space {
+                display: none;
             }
 
-            nav ul li {
-                margin-left: 0;
-                margin-bottom: 5px;
+            @media screen and (max-width: 768px) {
+                h2 {
+                    line-height: 15px;
+                    font-size: 23px;
+                }
+                .mobile_space {
+                    display: block;
+                }
+                
             }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <a href="index.html">
-            <img src="CGSB.svg" alt="Logo" class="logo" id="homePic" width="150">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="btn2" id="homeLink">Home</a></li>
-                <li><a href="work.html" class="btn2" id="workLink">Work Samples</a></li>
-                <li><a href="bio.html" class="btn2" id="bioLink">About</a></li>
+
+        </style>
+
+        <script src="js/mobile-menu.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+          <a href="index.html"><img src="img/CGSB.svg" class="logo" ></a>
+          
+          <div class="mobile-menu" id="mobileMenu">
+            <!--<button class="close-mobile-menu" onclick="toggleMenu()">&nbsp;</button>-->
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+          </div>
+          <div class="burger" onclick="toggleMenu()">&nbsp;</div>
+          
+          <nav>
+              <ul>
+                  <li><a href="work.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+        <div class="container">
+            <main>
+                <section id="work">
 
-    <main>
-        <section id="work">
-            <h2>Coach</h2>
-            <br>
-            <p>Immersive Outdoor Installation • "Wear Your Shine" Campaign</p>
-            <p>Composition, Sound Design</p>
-            <br>
-            <br>
-           
-            <br>
-            <div class="image-carousel">
-                <a href="coach.html" target="_blank">
-                <img src="cover/coach.jpg" width="100%" >
-                </a>
+                    <h2>Nike <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">.SWOOSH Air Max 1 “Low Poly”</span></h2>
+                    <br/>
+                    <div class="image-carousel">
+                        <a href="work/nike404lowpoly.html">
+                        <img src="img/kaiweb/web01.jpg" width="100%" >
+                        </a>
+                    </div>
+                    <br/>
+
+                    <h2>Coach <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Wear Your Shine</span></h2>
+                    <br/>
+                    <div class="image-carousel">
+                        <a href="work/coach.html">
+                        <img src="img/cover/coach.jpg" width="100%" >
+                        </a>
+                    </div>
+                    <br/>
+
+
+                    <h2>Nike <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">.SWOOSH Air Force 1 Low “404”</span></h2>
+                    <br/>
+                    <div class="image-carousel">
+                        <a href="work/nike404.html">
+                        <img src="img/cover/swoosh.jpg" width="100%" >
+                        </a>
+                    </div>
+                    <br/>
+
+
+                    <h2>General Electric <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">GridOS<sup>&reg;</sup></span></h2>
+                    <br/>
+                    <div class="image-carousel">
+                        <a href="work/GE.html">
+                        <img src="img/cover/ge.jpg" width="100%" >
+                        </a>
+                    </div>
+                    <br/>
+
+                    
+                    <h2>Coachtopia <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Welcome to Coachtopia</span></h2>
+                    <br/>
+                    <div class="image-carousel">
+                        <a href="work/coachtopia.html">
+                        <img src="img/cover/coachtopia.jpg" width="100%" >
+                        </a>
+                    </div>
+                    <br/>
+
+
+                    <h2>The Whitney <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Rachel Rossin "The Maw Of"</span></h2>
+                    <br/>
+                    <div class="image-carousel">
+                    <a href="https://whitney.org/exhibitions/the-maw-of" target="_blank">
+                        <img src="img/cover/whitney.jpg" width="100%" >
+                    </a>
+                    </div>
+                    <br/>
+                
+
+                    <h2>Exhibition Mockup <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Highlights</span></h2>
+                    <br/>
+                    <div class="image-carousel">
+                        <a href="work/exhibition.html">
+                        <img src="img/cover/exhibition.jpg" width="100%" >
+                        </a>
+                    </div>
+                    <br/>
+
+
+                    <h2>Head & Shoulders <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Take It Up To 100</span></h2>
+                    <br/>
+                    <div class="image-carousel">
+                        <a href="work/headshoulders.html">
+                        <img src="img/cover/hs.jpg" width="100%" >
+                        </a>
                     </div>
 
-            <h2>Nike</h2>
-            <br>
-            <p>Ad Campaign • .SWOOSH "404 ERROR"</p>
-            
-            <p>Concept, Technical Direction, Prop Design</p>
-            <br>
-            
-            <br>
-            
-            <div class="image-carousel">
-                <a href="nike404.html" target="_blank">
-                <img src="cover/swoosh.jpg" width="100%" >
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="footer_desktop">
+                <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;Computer Generated Services Bureau</p>
+            </div>
+            <div class="footer_mobile">
+                <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;CGSB</p>
+            </div>
+            <ul>
+            <li>
+                <a href="https://www.instagram.com/cgsbstudio/" target="_blank" rel="noopener noreferrer">
+                <img src="img/socials/instagram_100.png" alt="CGSB on Instagram" width="20">
                 </a>
-                    </div>
-
-            <h2>General Electric</h2>
-            <br>
-            <p>Investor Day Presentation</p>
-            <p>3D Modeling, Compositing, Motion Design</p>
-            <br>
-            <br>
-            <div class="image-carousel">
-                <a href="GE.html" target="_blank">
-                <img src="cover/ge.jpg" width="100%" >
+            </li>
+            <li>
+                <a href="https://linkedin.com/company/cgsbstudio" target="_blank" rel="noopener noreferrer">
+                <img src="img/socials/linkedin_100.png" alt="CGSB on LinkedIn" width="20">
                 </a>
-                    </div>
-            
-            <h2>Coachtopia</h2>
-            <br>
-            <p>Interactive In-Store Experience • “Welcome to Coachtopia” Brand Activation</p>
-            <p>Composition</p>
-            <br>
-            <br>
-            <br>
-            <div class="image-carousel">
-                <a href="coachtopia.html" target="_blank">
-                <img src="cover/coachtopia.jpg" width="100%" >
-                </a>
-                    </div>
-
-            <h2>The Whitney Museum of American Art</h2>
-            <br>
-            <p>Digital Exhibition • Rachel Rossin "The Maw Of"</p>
-            
-            <p>3D Modeling • Scene Optimization • WebGL</p>
-            <br>
-            <br>
-            <div class="image-carousel">
-            <a href="https://whitney.org/exhibitions/the-maw-of" target="_blank">
-            <img src="cover/whitney.jpg" width="100%" >
-            </a>
-                </div>
-           
-            
-
-            <h2>Exhibition Mockup</h2>
-            <br>
-            <p>Various Artists</p>
-            
-            <p>Concept, 3D Modeling, Lighting, Rendering</p>
-            <br>
-            <br>
-            
-            <div class="image-carousel">
-                <a href="exhibition.html" target="_blank">
-                <img src="cover/exhibition.jpg" width="100%" >
-                </a>
-                    </div>
-
-            <h2>Head & Shoulders</h2>
-            <br>
-            <p>Virtual Production • "Take It Up To 100" </p>
-            
-            <p>Concept, Unreal Engine, 3D Modeling, Lighting</p>
-            <br>
-            <br>
-            
-            <div class="image-carousel">
-                <a href="headshoulders.html" target="_blank">
-                <img src="cover/hs.jpg" width="100%" >
-                </a>
-                    </div>
-
-        </section>
-    </main>
-</body>
-<footer>
-    <p>© Computer Generated Services Bureau 2024</p>
-</footer>
+            </li>
+            </ul>
+        </footer>
+    </body>
 </html>

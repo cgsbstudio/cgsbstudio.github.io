@@ -1,153 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="theme-color" content="#F0F0E5">
+      <meta property="description" content="Experience Design Solutions For Creative Studios & Agencies">
+      
+      <meta property="og:title" content="CGSB">
+      <meta property="og:description" content="Experience Design Solutions For Creative Studios & Agencies">
+      <meta property="og:image" content="img/og-thumb.jpg">
+      <meta property="og:url" content="https://cgsb.studio">
+      <meta property="og:type" content="website">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- Other meta tags and title -->
- <meta property="og:title" content="CGSB">
- <meta property="og:description" content="Experience Design Solutions For Creative Studios & Agencies">
- <meta property="og:image" content="thumb.jpg">
- <meta property="og:url" content="https://cgsb.studio">
- <meta property="og:type" content="website">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    
-    <audio id="blipSound" src="blip11.mp3"></audio>
-    <audio id="clickSound" src="blip3.mp3"></audio>
-    <style>
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: transparent;
-            padding: 20px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
+      <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+      <link rel="shortcut icon" href="favicon/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+      <link rel="manifest" href="favicon/site.webmanifest" />
+      
+      <title>CGSB - Home</title>
+
+      <link rel="stylesheet" href="styles/styles.css">
+
+      <style>
+        section {
+          padding: 80px 0;
         }
 
-        footer {
-            background-color: transparent;
+        #hero-player, #section1 {
+          max-width: 1360px;
+          margin: 0 auto;
+          padding-left: 80px;
+          padding-right: 80px;
         }
-        nav ul {
-            list-style: none;
+
+        main {
+          width: 100%;
+          padding: 0;
+        }
+
+        #hero-player {
+          padding-bottom: 60px;
+        }
+
+        #hero-player:hover {
+          cursor: pointer;
+        }
+
+        #hero-player p {
+          text-align: right;
+          font-size: 1.2em;
+          padding-top: 10px;
+        }
+
+        #section1 {
+          padding-top: 0px;
+          padding-bottom: 140px;
+          display: flex;
+        }
+
+        #section1 li {
+          list-style: none;
+          font-size: 1.3em;
+        }
+
+        #section1 h1 {
+          font-size: 1.9em;
+          font-weight: normal;
+          max-width: 650px;
+          margin-bottom: 20px;
+        }
+
+        #section1_copy {
+          width: 70%;
+          padding-right: 10px;
+        }
+
+        #section1_buttons {
+          width: 30%;
+          text-align: right;
+        }
+
+        #section1_buttons button {
+          width:100%;
+          max-width: 250px;
+          background: transparent;
+          border: 1px solid #787878;
+          font-family: 'Helvetica Neue', sans-serif;
+          color: #2C3137;
+          height: 50px;
+          font-size: 1.2em;
+          font-weight: 400;
+          margin-bottom: 25px;
+          transition: all 0.3s;
+        }
+
+        #section1_buttons button:hover {
+          background:#a6b5b6;
+          cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+          #hero-player {
             padding: 0;
-            margin: 0;
-            display: inline-block;
-        }
-        nav ul li {
-            margin-left: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #000;
-        }
-        .container {
-            display: flex;
+          }
+          #section1 {
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+          }
+
+          #hero-player p {
+            text-align: center;
+            font-size: small;
+          }
+
+          #section1 {
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex: 0 0 50%;
+            padding-bottom: 40px;
+          }
+
+          #section1 h1 {
+            font-size: 1.4em;
+          }
+
+          #section1 li {
+            font-size: 1.2em;
+          }
+
+          #section1_copy {
             width: 100%;
-            max-width: 100%;
-            overflow: hidden;
-            padding: 0;
-            margin: 0 auto;
-            
+            padding-right: 0;
+          }
 
-        }
-
-        body {
-            font-family: Garamond, sans-serif;
-            background-color: #F0F0E5;
-            }
-
-        h1 {font-family: "Garamond", sans-serif;
-            font-size: 2.5em;
-            color: #242424;
+          #section1_buttons {
+            width: 100%;
             text-align: center;
-            margin: 0;
-            padding: 0;
-            }
+            padding: 50px 20px 0 20px;
+          }
 
-            h2 {font-family: "Garamond", sans-serif;
-            font-size: 1.8em;
-            font-weight: normal;
-            color: #242424;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            }
-
-        homePic {
-            padding: 100;
+          #section1_buttons button {
+            width: 100%;
+          }
+          
         }
 
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav ul {
-                flex-direction: column;
-                margin-top: 10px;
-            }
-
-            nav ul li {
-                margin-left: 0;
-                margin-bottom: 5px;
-            }
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 5px;
+          background-color: #2C3137;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.3s ease;
         }
-    </style>
-</head>
-<body>
-    <header>
-            <a href="index.html">
-            <img src="CGSB.svg" alt="Logo" class="logo" id="homePic" width="150">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="btn2" id="homeLink">Home</a></li>
-                    <li><a href="work.html" class="btn2" id="workLink">Work Samples</a></li>
-                    <li><a href="bio.html" class="btn2" id="bioLink">About</a></li>
-                </ul>
-            </nav>
-    </header>
 
-    <main role="main">
+        .active, .dot:hover {
+          background-color: #717171;
+        }
 
-        <section id="work">
-            <H2 style="text-align: center;">Featured Project</H2>
-            <br>
-            <p style="text-align: center;">Nike .SWOOSH "404 Error" Campaign</p>
-        </section>
-        <section id="home" class="section">
+        .selected {
+          border: 2px solid #2C3137;
+          background-color: transparent;
+        }
 
-          <div class="container">
-            <div class="full-width-image-container">
-              <div class="slideshow">
-                <img src="hero/1.jpg" class="full-width-image slide active" alt="Nike1">
-                <img src="hero/2.jpg" class="full-width-image slide" alt="Nike2">
-                <img src="hero/3.jpg" class="full-width-image slide" alt="Nike3">
-                <img src="hero/4.jpg" class="full-width-image slide" alt="Nike4">
-                <img src="hero/5.jpg" class="full-width-image slide" alt="Nike5">
-              </div>
+        .selected:hover {
+          background-color: transparent;
+        }
+
+        .slideshow-nav-container {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        @media screen and (max-width: 768px) {
+          .slideshow-nav-container {
+            display: block;
+          }
+          
+        }
+        
+
+      </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+          <a href="index.html"><img src="img/CGSB.svg" class="logo" ></a>
+          
+          <div class="mobile-menu" id="mobileMenu">
+            <!--<button class="close-mobile-menu" onclick="toggleMenu()">&nbsp;</button>-->
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="burger" onclick="toggleMenu()">&nbsp;</div>
+          
+          <nav>
+              <ul>
+                  <li><a href="work.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+      
+      <main>
+        <section id="hero-player">
+          <div class="slideshow" id="hero-player-slideshow" onclick=" location.href='work/nike404.html'">
+            <img src="img/cover/swoosh.jpg" class="full-width-image slide active" alt="Nike .SWOOSH '404 Error' Campaign" data-client="Nike" data-name=".SWOOSH '404 Error' Campaign" data-link="work/nike404.html">
+            <img src="img/cover/coach.jpg" class="full-width-image slide" alt="Coach Wear Your Shine" data-client="Coach" data-name="Wear Your Shine" data-link="work/coach.html">
+            <img src="img/cover/kai_2.jpg" class="full-width-image slide" alt="Nike .SWOOSH Air Max 1 'Low Poly'" data-client="Nike" data-name=".SWOOSH Air Max 1 'Low Poly'" data-link="work/nike404lowpoly.html">
+            <img src="img/cover/hs.jpg" class="full-width-image slide" alt="Head & Shoulders Take It Up To 100" data-client="Head & Shoulders" data-name="Take It Up To 100" data-link="work/headshoulders.html">
+            <img src="img/cover/ge.jpg" class="full-width-image slide" alt="General Electric GridOS" data-client="General Electric" data-name="GridOS" data-link="work/GE.html">
+          </div>
+          <div class="slideshow-nav-container">
+            <div style="text-align:left;padding-top: 12px;" class="slideshow-nav desktop_only" id="hero-player-slideshow-nav">
+              <span class="dot selected" onclick="clickSlide(0)"></span>
+              <span class="dot" onclick="clickSlide(1)"></span>
+              <span class="dot" onclick="clickSlide(2)"></span>
+              <span class="dot" onclick="clickSlide(3)"></span>
+              <span class="dot" onclick="clickSlide(4)"></span>
             </div>
-      
-            <div style="margin-bottom: 100px;"></div>
-      
-            <a href="work.html" id="viewWorkButton" class="btn">View Work Samples</a>
+            <p>
+              <a id="__hero_link" href="work/nike404.html">
+                <span>Nike <span class="text-decoration: italic">.SWOOSH "404 Error" Campaign</span></span>
+              </a>
+            </p>
           </div>
         </section>
+
+        <section id="section1">
+          <div id="section1_copy">
+            <h1 style="margin-bottom: 0px;margin-top:-8px">
+              CGSB is a creative studio.
+            </h1>
+            <h1>
+              We produce, design, and consult across:
+            </h1>
+            <ul>
+              <li>3D Production</li>
+              <li>Animation & Motion Graphics</li>
+              <li>Narrative Strategy</li>
+              <li>Sound Design & Composition</li>
+            </ul>
+          </div>
+
+          <div id="section1_buttons">
+              <button onclick="location.href='work.html'">Work</button><br/>
+              <button onclick="location.href='about.html'">About</button><br/>
+              <button onclick="location.href='contact.html'">Contact</button><br/>
+          </div>
+
+        </section>
+
       </main>
-      <script src="slideshow.js"></script>
-</body>
-<footer>
-    <p>© Computer Generated Services Bureau 2024</p>
-</footer>
+    </div>
+    <footer>
+        <div class="footer_desktop">
+            <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;Computer Generated Services Bureau</p>
+        </div>
+        <div class="footer_mobile">
+            <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;CGSB</p>
+        </div>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/cgsbstudio/" target="_blank" rel="noopener noreferrer">
+              <img src="img/socials/instagram_100.png" alt="CGSB on Instagram" width="20">
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/company/cgsbstudio" target="_blank" rel="noopener noreferrer">
+              <img src="img/socials/linkedin_100.png" alt="CGSB on LinkedIn" width="20">
+            </a>
+          </li>
+        </ul>
+    </footer>
+
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/slideshow.js"></script>
+  </body>
 </html>
