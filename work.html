@@ -26,6 +26,21 @@
                 text-align: left;
             }
 
+            .mobile_space {
+                display: none;
+            }
+
+            @media screen and (max-width: 768px) {
+                h2 {
+                    line-height: 15px;
+                    font-size: 23px;
+                }
+                .mobile_space {
+                    display: block;
+                }
+                
+            }
+
         </style>
 
         <script src="js/mobile-menu.js"></script>
@@ -39,7 +54,7 @@
             <!--<button class="close-mobile-menu" onclick="toggleMenu()">&nbsp;</button>-->
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="work.html">Work Samples</a></li>
+              <li><a href="work.html">Work</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -48,7 +63,7 @@
           
           <nav>
               <ul>
-                  <li><a href="work.html">Work Samples</a></li>
+                  <li><a href="work.html">Work</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="contact.html">Contact</a></li>
               </ul>
@@ -58,10 +73,16 @@
             <main>
                 <section id="work">
 
-                    <h2>Coach</h2>
+                    <h2>Nike <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">.SWOOSH Air Max 1 “Low Poly”</span></h2>
                     <br/>
-                    <p>Immersive Outdoor Installation • "Wear Your Shine" Campaign</p>
-                    <p>Composition, Sound Design</p>
+                    <div class="image-carousel">
+                        <a href="work/nike404lowpoly.html">
+                        <img src="img/kaiweb/web01.jpg" width="100%" >
+                        </a>
+                    </div>
+                    <br/>
+
+                    <h2>Coach <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Wear Your Shine</span></h2>
                     <br/>
                     <div class="image-carousel">
                         <a href="work/coach.html">
@@ -71,10 +92,7 @@
                     <br/>
 
 
-                    <h2>Nike</h2>
-                    <br/>
-                    <p>Ad Campaign • .SWOOSH "404 ERROR"</p>
-                    <p>Concept, Technical Direction, Prop Design</p>
+                    <h2>Nike <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">.SWOOSH Air Force 1 Low “404”</span></h2>
                     <br/>
                     <div class="image-carousel">
                         <a href="work/nike404.html">
@@ -84,10 +102,7 @@
                     <br/>
 
 
-                    <h2>General Electric</h2>
-                    <br/>
-                    <p>Investor Day Presentation</p>
-                    <p>3D Modeling, Compositing, Motion Design</p>
+                    <h2>General Electric <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">GridOS<sup>&reg;</sup></span></h2>
                     <br/>
                     <div class="image-carousel">
                         <a href="work/GE.html">
@@ -97,10 +112,7 @@
                     <br/>
 
                     
-                    <h2>Coachtopia</h2>
-                    <br/>
-                    <p>Interactive In-Store Experience • “Welcome to Coachtopia” Brand Activation</p>
-                    <p>Composition</p>
+                    <h2>Coachtopia <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Welcome to Coachtopia</span></h2>
                     <br/>
                     <div class="image-carousel">
                         <a href="work/coachtopia.html">
@@ -110,10 +122,7 @@
                     <br/>
 
 
-                    <h2>The Whitney Museum of American Art</h2>
-                    <br/>
-                    <p>Digital Exhibition • Rachel Rossin "The Maw Of"</p>
-                    <p>3D Modeling • Scene Optimization • WebGL</p>
+                    <h2>The Whitney <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Rachel Rossin "The Maw Of"</span></h2>
                     <br/>
                     <div class="image-carousel">
                     <a href="https://whitney.org/exhibitions/the-maw-of" target="_blank">
@@ -123,10 +132,7 @@
                     <br/>
                 
 
-                    <h2>Exhibition Mockup</h2>
-                    <br/>
-                    <p>Various Artists</p>
-                    <p>Concept, 3D Modeling, Lighting, Rendering</p>
+                    <h2>Exhibition Mockup <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Highlights</span></h2>
                     <br/>
                     <div class="image-carousel">
                         <a href="work/exhibition.html">
@@ -136,10 +142,7 @@
                     <br/>
 
 
-                    <h2>Head & Shoulders</h2>
-                    <br/>
-                    <p>Virtual Production • "Take It Up To 100" </p>
-                    <p>Concept, Unreal Engine, 3D Modeling, Lighting</p>
+                    <h2>Head & Shoulders <div class="mobile_space"><br/></div><span style="font-size:.85em;font-style: italic;">Take It Up To 100</span></h2>
                     <br/>
                     <div class="image-carousel">
                         <a href="work/headshoulders.html">
@@ -151,7 +154,12 @@
             </main>
         </div>
         <footer>
-            <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;CGSB</p>
+            <div class="footer_desktop">
+                <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;Computer Generated Services Bureau</p>
+            </div>
+            <div class="footer_mobile">
+                <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;CGSB</p>
+            </div>
             <ul>
             <li>
                 <a href="https://www.instagram.com/cgsbstudio/" target="_blank" rel="noopener noreferrer">

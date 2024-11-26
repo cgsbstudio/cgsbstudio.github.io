@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
     
-    <title>CGSB - Contact</title>
+    <title>CGSB - 404</title>
 
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -39,22 +39,35 @@
         }
       }
     </style>
+    
+    <script src="js/mobile-menu.js"></script>
 
 </head>
 
 <body>
   <div class="container">
     <header>
-      <a href="index.html"><img src="img/CGSB.svg" class="logo" ></a>
-      <div class="burger">&nbsp;</div>
-      <nav>
-          <ul>
-              <li><a href="work.html"  id="workLink">Work Samples</a></li>
-              <li><a href="about.html"  id="aboutLink">About</a></li>
-              <li><a href="contact.html"  id="contactLink">Contact</a></li>
+        <a href="index.html"><img src="img/CGSB.svg" class="logo" ></a>
+        
+        <div class="mobile-menu" id="mobileMenu">
+          <!--<button class="close-mobile-menu" onclick="toggleMenu()">&nbsp;</button>-->
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-      </nav>
-    </header>   
+        </div>
+        <div class="burger" onclick="toggleMenu()">&nbsp;</div>
+        
+        <nav>
+            <ul>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
 
     <section id="contact">
         [404] Page not found.
@@ -62,7 +75,12 @@
   </div>
 
   <footer>
-      <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;CGSB</p>
+    <div class="footer_desktop">
+        <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;Computer Generated Services Bureau</p>
+    </div>
+    <div class="footer_mobile">
+        <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;CGSB</p>
+    </div>
       <ul>
         <li>
           <a href="https://www.instagram.com/cgsbstudio/" target="_blank" rel="noopener noreferrer">

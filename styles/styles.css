@@ -30,6 +30,7 @@ End Color Palette */
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
   
 /* End Fonts */
 
@@ -102,8 +103,8 @@ section {
 
 header {
     height: 80px;
-    font-family: "Jaldi", sans-serif;
-    font-size: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
     
     background-color: rgba(240, 240, 229, .9);
     border-bottom: 1px solid #2C3137;
@@ -195,8 +196,8 @@ header .burger {
 }
 
 footer {
-    font-family: "Jaldi", sans-serif;
-    font-size: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
     background-color: #F0F0E5;
     color: #2C3137;
     border-top: 1px solid #fff;
@@ -223,6 +224,33 @@ footer ul {
 
 footer ul li {
     margin: 0 20px;
+}
+
+.footer_desktop {
+    display: block;
+}
+.footer_mobile {
+    display: none;
+}
+.desktop_only {
+    display: block;
+}
+.mobile_only {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .footer_desktop {
+        display: none;
+    }
+    .footer_mobile {
+        display: block;
+    }
+    .desktop_only {
+        display: none;
+    }
+    .mobile_only {
+        display: block;
+    }
 }
 /* End Basic Styling */
 
@@ -360,7 +388,7 @@ footer ul li {
 .mobile-menu {
     position: fixed;
     top: 0;
-    font-weight: 100;
+    font-weight: 400;
     background: #efefef;
     width: 180px;
     height: 280px;
