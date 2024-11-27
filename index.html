@@ -175,6 +175,10 @@
           background-color: transparent;
         }
 
+        .slideshow {
+          touch-action: pan-y; /* Allows vertical scrolling but prevents horizontal */
+        }
+
         .slideshow-nav-container {
           display: flex;
           justify-content: space-between;
@@ -373,7 +377,7 @@
       }
 
       function startDrag(event) {
-        event.preventDefault(); // Prevent scrolling during drag
+        // event.preventDefault(); // Prevent scrolling during drag
         touchStartX = event.touches[0].clientX;
         touchCurrentX = touchStartX;
         isDragging = true;
@@ -430,7 +434,7 @@
       }
 
       function clickSlide(index) {
-        //stopAutoPlay(); // Stop autoplay permanently when a dot is clicked
+        stopAutoPlay(); // Stop autoplay permanently when a dot is clicked
         showSlides(index);
       }
 
