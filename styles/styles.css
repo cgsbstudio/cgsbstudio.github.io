@@ -109,6 +109,7 @@ header {
     background-color: rgba(240, 240, 229, .9);
     border-bottom: 1px solid #2C3137;
     
+    -webkit-backdrop-filter: blur(25px); /* for Safari*/
     backdrop-filter: blur(25px);
 
     position: fixed;
