@@ -284,6 +284,8 @@ footer ul li {
 .carousel-item video {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    -webkit-transform: translateZ(0);
 }
 
 .image-carousel {
