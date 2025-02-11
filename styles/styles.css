@@ -73,13 +73,13 @@ main {
 }
 
 a {
-    color: #1e35c5;
+    color: #2C3137;
     text-decoration: none;
     transition: color 0.1s ease;
 }
 
 a:hover {
-    color: #bc4141;
+    color: #718cb7;
 }
 
 h2 {

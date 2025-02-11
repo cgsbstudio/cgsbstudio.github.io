@@ -9,3 +9,9 @@ main {
 h2 {
     text-align: left;
 }
+
+a {
+    color: #4452d1;
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
